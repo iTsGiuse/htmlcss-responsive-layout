@@ -4,3 +4,79 @@
     box-sizing: border-box;
     font-family: "PT Sans", sans-serif;
 }
+
+.container{
+    border: 1px solid transparent;
+    margin: 0 auto;
+    width: 1200px ;
+}
+
+.box{
+    border: 1px solid transparent;
+}
+
+.row{
+    display: flex;
+}
+
+.col{
+
+}
+
+.btn {
+    border: 1px solid transparent;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px ;
+ }
+
+.btn-white {
+    background-color: white;
+    color: #444444;
+    border-radius: 15px;
+}
+
+ul, li{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.link{
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+img{
+    width: 100%;
+}
+
+/* INIZIO HEADER */
+
+header  {
+    background-color:#0084fd;
+    padding: 5px;
+}
+
+header .row  {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0px;
+}
+
+header .col:nth-last-child(1){
+    display: flex;
+    justify-content: flex-end;
+}
+header .box ul{
+    margin-top: 10px;
+    margin-right: 25px;
+}
+/* FINE HEADER */
+
+/* INIZIO INFO */
+
+
+/* FINE INFO */

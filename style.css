@@ -7,8 +7,8 @@
 
 .container{
     border: 1px solid transparent;
+    width: 1200px;
     margin: 0 auto;
-    width: 1200px ;
 }
 
 .box{
@@ -25,15 +25,21 @@
 
 .btn {
     border: 1px solid transparent;
+    border-radius: 15px;
     padding: 10px;
     cursor: pointer;
     font-size: 18px ;
- }
+}
 
 .btn-white {
     background-color: white;
     color: #444444;
     border-radius: 15px;
+}
+
+.btn-blue {
+    background-color: #0084fd;
+    color: white;
 }
 
 ul, li{
@@ -59,13 +65,11 @@ header  {
     background-color:#0084fd;
     padding: 5px;
 }
-
 header .row  {
     display: flex;
     justify-content: space-between;
     margin: 15px 0px;
 }
-
 header .col:nth-last-child(1){
     display: flex;
     justify-content: flex-end;
@@ -74,9 +78,30 @@ header .box ul{
     margin-top: 10px;
     margin-right: 25px;
 }
+
 /* FINE HEADER */
 
 /* INIZIO INFO */
 
+#info{
+    background-color: white;
+}
+#info .row{
+    margin-top: 50px;
+}
+#info .box{
+    margin-top: 30px;
+}
+#info .col:nth-last-child(1) .box:nth-child(1){
+    margin-top: 0px;
+}
+#info .row .col:nth-child(1) {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* #info .row .col:nth-child(2) .col:nth-child(3) {
+    display: block;
+}  */
 
 /* FINE INFO */

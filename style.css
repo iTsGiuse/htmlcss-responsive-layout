@@ -24,7 +24,7 @@
 }
 
 .col{
-padding: 0 10px;
+    padding: 0 10px;
 }
 
 .btn {
@@ -33,6 +33,7 @@ padding: 0 10px;
     padding: 10px;
     cursor: pointer;
     font-size: 18px ;
+    text-align: center;
 }
 
 .btn-white {
@@ -44,6 +45,11 @@ padding: 0 10px;
 .btn-blue {
     background-color: #0084fd;
     color: white;
+}
+.btn-viola{
+    border-radius: 100%;
+    background-color: #9792e4;
+
 }
 
 ul, li{
@@ -94,15 +100,15 @@ header .box ul{
     margin-top: 50px;
 }
 #hero .col {
-    margin-top: 30px;
     background-color: #b5ddff;
-    margin-left: 8px;
     width: calc(100%/3);
-    border-radius: 30px;
     display: flex;
+    margin-top: 8px;
+    margin-left: 8px;
+    border-radius: 30px;
 }
 
-#hero .box-t, .box-p, .box-button{
+#hero .box-t .box-p .box-button{
     margin-top: 40px;
     margin-bottom: 30px;
     margin-left: 20px;
@@ -117,7 +123,7 @@ header .box ul{
     font-size: 30px;
     margin-top: 10px;
 }
-#hero p{
+#hero, .p-hero{
     line-height: 1.5;
     font-size: 20px;
     margin-top: 40px;
@@ -157,5 +163,56 @@ header .box ul{
 /* INIZIO INFO */
 #info{
     background-color: #9792e4;
+    margin-top: 100px;
+    margin-bottom: 100px;
+
 }
+#info .row {
+    flex-wrap: nowrap;
+    margin-top: 200px;
+    margin-bottom: 200px;
+  }
+#info .col{
+    width: calc(100%/2);
+    display: block;
+    margin-right: 80px;
+    text-align: center;
+}
+
+
+#info .col:nth-child(1){
+    color: white ;
+    margin-bottom: 100px;
+    font-size: 20px;
+}
+#info .box-image-uno{
+    width: 110%;
+}
+
+#info .title-info{
+    margin-top: 200px;
+    margin-bottom: 50px;
+ }
+
+ #info .col:nth-last-child(1){
+    background-color: white;
+    font-style: italic;
+    font-size: 20px;
+    border-radius: 50px;
+    margin-top: 200px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+}
+#info .card:nth-last-child(1) .box-p .box-t .box:nth-last-child(1){
+    margin-top: 100px ;
+ }
+#info .card:nth-last-child(1){
+    margin-bottom: px;
+}
+
+
+
+
+
 /* FINE INFO */

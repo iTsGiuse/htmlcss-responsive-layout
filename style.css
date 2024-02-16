@@ -1,6 +1,6 @@
 *{
     margin: 0;
-    padding: 0;
+    padding: 0px;
     box-sizing: border-box;
     font-family: "PT Sans", sans-serif;
 }
@@ -10,6 +10,9 @@
     width: 1200px;
     margin: 0 auto;
 }
+.c-small{
+    width: 890px;
+}
 
 .box{
     border: 1px solid transparent;
@@ -17,10 +20,11 @@
 
 .row{
     display: flex;
+    flex-wrap: wrap;
 }
 
 .col{
-
+padding: 0 10px;
 }
 
 .btn {
@@ -82,26 +86,76 @@ header .box ul{
 /* FINE HEADER */
 
 /* INIZIO INFO */
-
-#info{
-    background-color: white;
+.grow{
+    flex-grow: 1;
 }
-#info .row{
+#hero{
+    background-color: white;
     margin-top: 50px;
 }
-#info .box{
+#hero .col {
     margin-top: 30px;
-}
-#info .col:nth-last-child(1) .box:nth-child(1){
-    margin-top: 0px;
-}
-#info .row .col:nth-child(1) {
+    background-color: #b5ddff;
+    margin-left: 8px;
+    width: calc(100%/3);
+    border-radius: 30px;
     display: flex;
-    justify-content: space-between;
 }
 
-/* #info .row .col:nth-child(2) .col:nth-child(3) {
-    display: block;
-}  */
+#hero .box-t, .box-p, .box-button{
+    margin-top: 40px;
+    margin-bottom: 30px;
+    margin-left: 20px;
+}
+#hero .box-image{
+    margin-bottom: -393px;
+    margin-right: 70px ;
+    width: 100%;
+} 
+.title-hero{
+    color: #0084fd;
+    font-size: 30px;
+    margin-top: 10px;
+}
+#hero p{
+    line-height: 1.5;
+    font-size: 20px;
+    margin-top: 40px;
+}
 
+#hero .row:nth-child(1) .col:nth-child(2)  {
+    display: block;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 5px;
+}
+#hero .row:nth-last-child(1) .col:nth-child(1) {
+    display: block;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 5px;
+    width: 370px;
+}
+#hero .row:nth-last-child(1) .col:nth-child(2) {
+    display: block;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 5px;
+}
+#hero .row:nth-last-child(1) .col:nth-child(3) {
+    display: block;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 5px;
+}
+.icon-title{
+    font-size: 100px;
+    color: blue;
+}
+/* FINE INFO */
+
+/* INIZIO INFO */
+#info{
+    background-color: #9792e4;
+}
 /* FINE INFO */
